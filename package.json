@@ -1,8 +1,9 @@
 {
-  "name": "google-drive-download",
-  "version": "0.0.1",
+  "name": "google-drive-dwn",
+  "version": "0.0.6",
   "description": "Google Drive File Downloader",
-  "main": ".lib/index.js",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
   "directories": {
     "lib": "lib"
   },

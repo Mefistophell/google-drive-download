@@ -1,8 +1,8 @@
-# google-drive-download (Google Drive File Downloader)
+# google-drive-dwn (Google Drive File Downloader)
 
 ## Purpose
 
-`google-drive-download` is an simple way to download a shared file from Google Drive.
+`google-drive-dwn` is an simple way to download a shared file from Google Drive.
 
 The module can perform:
 
@@ -23,7 +23,7 @@ Before starting you have to to install `googleapis`
 
 When `googleapis` has been installed you can run: 
 
-`npm install google-drive-download --save`
+`npm install google-drive-dwn --save`
 
 > NOTE: During the installation you will be asked a few questions. So you should be prepared.
 
@@ -62,7 +62,7 @@ You will need them later when you are ready to use the module.
 ## Usage
 
 ```
-const googleDrive = require('./google-drive-download');
+const googleDrive = require('./google-drive-dwn');
 const drive = googleDrive(config)
 ```
 The config is an object that contains the following properties: 
@@ -78,7 +78,7 @@ The config is an object that contains the following properties:
 
 Example: 
 ```
-const googleDrive = require('./google-drive-download');
+const googleDrive = require('./google-drive-dwn');
 
 const drive = googleDrive({
     scopes: ['https://www.googleapis.com/auth/drive.readonly'],
@@ -114,7 +114,7 @@ const drive = googleDrive({
 });
 
 drive('fileId')
-  .than(res => console.log(res))
+  .then(res => console.log(res))
   .catch(err => console.error(err))
 
 ```

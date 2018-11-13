@@ -7,8 +7,8 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-const CREDENTIALS_PATH = `./credentials.json`
-const TOKEN_PATH = `./token.json`
+const CREDENTIALS_PATH = `../../credentials.json`
+const TOKEN_PATH = `../../token.json`
 
 rl.question('Please, put credentials.json in the root of your app and press enter: ', () => {
     try {
@@ -58,13 +58,17 @@ function auth(SCOPES) {
         rl.question('Enter the code from that page here: ', (code) => {
             rl.close();
             oAuth2Client.getToken(code, (err, token) => {
-                if (err) return console.error('Error retrieving access token', err);
+                if (err) {
+                    console.error('Error retrieving access token');
+                    process.exit()
+                }
                 oAuth2Client.setCredentials(token);
                 // Store the token to disk for later program executions
                 fs.writeFile(TOKEN_PATH, JSON.stringify(token), (err) => {
                     if (err) console.error(err);
                     console.log('Token stored to', TOKEN_PATH);
                     console.log('Installation complete');
+                    process.exit()
                 });
             });
         });
