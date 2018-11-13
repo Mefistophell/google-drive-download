@@ -1,0 +1,22 @@
+{
+  "name": "google-drive-download",
+  "version": "0.0.1",
+  "description": "Google Drive File Downloader",
+  "main": ".lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "preinstall": "node preinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mefistophell/google-drive-download.git"
+  },
+  "keywords": [
+    "googleDrive",
+    "downloader"
+  ],
+  "author": "mefistophell",
+  "license": "ISC"
+}
