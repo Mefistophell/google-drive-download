@@ -2,22 +2,22 @@
 
 ## Purpose
 
-`google-drive-dwn` is an simple way to download a shared file from Google Drive.
+`google-drive-dwn` is asimple way to download a shared file from Google Drive.
 
 The module can perform:
 
-* download files with binary content
-* download Google Docs files and convert them to the specified format
-* restrict maximum file size
-* assign unique file names
+* downloading files with binary content
+* downloading Google Doc files and convert them to the specified format
+* restricting maximum file size
+* assigning unique file names
 
-> Note: This module was developed for **Google Drive API v3**
+> Note: This module was developed for **Google Drive API v3*a*
 
 You can use the module to download files one by one. This doesn't support multiple downloading.
 
 ## Installation
 
-Before starting you have to to install `googleapis`
+Before starting you have to install `googleapis`
 
 `npm install googleapis@27 --save`
 
@@ -27,9 +27,9 @@ When `googleapis` has been installed you can run:
 
 > NOTE: During the installation you will be asked a few questions. So you should be prepared.
 
-1. Please, put credentials.json in the root of your app and press enter
+### 1. Please, put credentials.json in the root of your app and press enter
 
-At this point you should enable the Drive API, download JSON-file (Google Console - APIs & Services - Credentials) and ensure it is named `credentials.json` (see below)
+At this point, you should enable the Drive API, download JSON-file (Google Console - APIs & Services - Credentials) and ensure it is named `credentials.json` (see below)
 
 ![Credentials](r1.png)
 
@@ -39,7 +39,7 @@ Put the `credentials.json` in the root of your app and press Enter
 
 [List of scopes](https://developers.google.com/drive/api/v3/about-auth)
 
-If you want to enter more then one scopes you should separate them with a comma
+If you want to enter more then one scope you should separate them with a comma
 
 For example: `https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.metadata`
 
