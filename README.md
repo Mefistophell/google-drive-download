@@ -62,7 +62,7 @@ You will need them later when you are ready to use the module.
 ## Usage
 
 ```
-const googleDrive = require('./google-drive-dwn');
+const googleDrive = require('google-drive-dwn');
 const drive = googleDrive(config)
 ```
 The config is an object that contains the following properties: 
@@ -78,7 +78,7 @@ The config is an object that contains the following properties:
 
 Example: 
 ```
-const googleDrive = require('./google-drive-dwn');
+const googleDrive = require('google-drive-dwn');
 
 const drive = googleDrive({
     scopes: ['https://www.googleapis.com/auth/drive.readonly'],
