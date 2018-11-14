@@ -1,0 +1,39 @@
+{
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": { "ecmaVersion": 2018 },
+  "rules": {
+    "no-console": 0,
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "next" }],
+    "indent": ["warn", 4, {
+      "SwitchCase": 1,
+      "VariableDeclarator": { "let": 2, "const": 3 }
+    }],
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "never"],
+    "eol-last": ["warn", "always"],
+    "no-trailing-spaces": "warn",
+    "no-multi-spaces": "warn",
+    "space-before-blocks": "warn",
+    "arrow-spacing": "warn",
+    "keyword-spacing": "warn",
+    "brace-style": "warn",
+    "space-before-function-paren": ["warn", {
+      "anonymous": "never",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "object-curly-spacing": ["warn", "always", {
+      "arraysInObjects": true,
+      "objectsInObjects": true
+    }],
+    "space-in-parens": "warn",
+    "comma-spacing": "warn",
+    "no-var": "warn",
+    "space-infix-ops": "warn"
+  }
+}

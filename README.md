@@ -33,7 +33,7 @@ At this point, you should enable the Drive API, download JSON-file (Google Conso
 
 ![Credentials](r1.png)
 
-Put the `credentials.json` in the root of your app and press Enter
+Put the file and press Enter
 
 ### 2. Enter the scopes
 
@@ -79,9 +79,9 @@ The config is an object that contains the following properties:
 | maxFileSize| Number | The size of the file's content in bytes |
 
 
-It returns TRUE true if successful.
+> It returns TRUE true if successful.
 
-Example: 
+**Example:**
 
 ```
 const googleDrive = require('google-drive-dwn');
