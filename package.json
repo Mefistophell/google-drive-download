@@ -1,6 +1,6 @@
 {
   "name": "google-drive-dwn",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Google Drive File Downloader",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
@@ -19,5 +19,5 @@
     "downloader"
   ],
   "author": "mefistophell",
-  "license": "ISC"
+  "license": "MIT"
 }

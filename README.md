@@ -2,7 +2,7 @@
 
 ## Purpose
 
-`google-drive-dwn` is asimple way to download a shared file from Google Drive.
+`google-drive-dwn` is a simple way to download a shared file from Google Drive.
 
 The module can perform:
 
@@ -11,7 +11,7 @@ The module can perform:
 * restricting maximum file size
 * assigning unique file names
 
-> Note: This module was developed for **Google Drive API v3*a*
+> Note: This module was developed for **Google Drive API v3**
 
 You can use the module to download files one by one. This doesn't support multiple downloading.
 
@@ -25,9 +25,9 @@ When `googleapis` has been installed you can run:
 
 `npm install google-drive-dwn --save`
 
-> NOTE: During the installation you will be asked a few questions. So you should be prepared.
+> NOTE: During the installation you will be asked for a few questions. So you should be prepared.
 
-### 1. Please, put credentials.json in the root of your app and press enter
+### 1. Please put credentials.json in the root of your app and press Enter
 
 At this point, you should enable the Drive API, download JSON-file (Google Console - APIs & Services - Credentials) and ensure it is named `credentials.json` (see below)
 
@@ -35,7 +35,7 @@ At this point, you should enable the Drive API, download JSON-file (Google Conso
 
 Put the `credentials.json` in the root of your app and press Enter
 
-2. Enter the scopes
+### 2. Enter the scopes
 
 [List of scopes](https://developers.google.com/drive/api/v3/about-auth)
 
@@ -43,7 +43,7 @@ If you want to enter more then one scope you should separate them with a comma
 
 For example: `https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.metadata`
 
-3. Browse to the provided URL in your web browser.
+### 3. Browse to the provided URL in your web browser.
 
 > If you are not already logged into your Google account, you will be prompted to log in. If you are logged into multiple Google accounts, you will be asked to select one account to use for the authorization.
 
@@ -53,7 +53,7 @@ Copy the code you're given, paste it into the command-line prompt, and press Ent
 
 It will create a `token.json` in the root of your app
 
-### After instalation
+## After installation
 
 Now you can move and/or rename the files `credentials.json` and `token.json`
 
@@ -62,8 +62,10 @@ You will need them later when you are ready to use the module.
 ## Usage
 
 ```
-const googleDrive = require('google-drive-dwn');
+const googleDrive = require('google-drive-dwn')
 const drive = googleDrive(config)
+...
+const result = await drive('fileId')
 ```
 The config is an object that contains the following properties: 
 
@@ -76,7 +78,11 @@ The config is an object that contains the following properties:
 | mimeTypes| Object | The list of mimeTypes |
 | maxFileSize| Number | The size of the file's content in bytes |
 
+
+It returns TRUE true if successful.
+
 Example: 
+
 ```
 const googleDrive = require('google-drive-dwn');
 
