@@ -80,7 +80,15 @@ The config is an object that contains the following properties:
 
 ### Return
 
-It returns the file path
+It returns an object that contains the following properties: 
+
+| Name | Type | Description |
+| --- | --- | --- |
+| _FILENAME| String| The file name  |
+| _EXT| String | The file extension |
+| _FILEPATH| String | The file path including name and extension |
+| _MIMETYPE| String | The mimeType of source file  |
+| _EXPORTTYPE| String | The mimeType of output file |
 
 **Example:**
 
