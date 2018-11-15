@@ -78,8 +78,9 @@ The config is an object that contains the following properties:
 | mimeTypes| Object | The list of mimeTypes |
 | maxFileSize| Number | The size of the file's content in bytes |
 
+### Return
 
-> It returns TRUE true if successful.
+It returns the file path
 
 **Example:**
 
